@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+    <body>
+        <h1>The URL you just entered:</h1>
+        <h2>{{ display }}</h2>
+        <a href="/">
+            <input class="goback_btn" type="button" value="Return to the last page" />
+        </a>
+    </body>
+</html>
