@@ -80,4 +80,10 @@ def delete_transaction(transaction_id):
     return redirect(url_for("get_transactions"))
 
 if __name__ == "__main__":
+    # Run the Flask app
     app.run(debug=True)
+    
+    # Run the tests
+    runner = unittest.TextTestRunner()
+    tests = unittest.defaultTestLoader.loadTestsFromTestCase(FlaskAppTestCase)
+    runner.run(tests)
