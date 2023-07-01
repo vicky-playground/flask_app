@@ -27,33 +27,33 @@ class FlaskAppTestCase(TestCase):
         print("test_get_transaction")
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200) # or self.assert200(response) or self.assertTrue(response.status_code==200)
-        self.assertTemplateUsed('transactions.html')
+        self.assertTemplateUsed('transactions.html') # to check that the correct template is used
 
     def test_add_transaction_form(self):
         print("test_add_transaction_form")
         response = self.client.get('/add')
         self.assertEqual(response.status_code, 200) # or self.assert200(response) or self.assertTrue(response.status_code==200)
-        self.assertTemplateUsed('form.html')
+        self.assertTemplateUsed('form.html') # to check that the correct template is used
 
     def test_add_transaction(self):
         print("test_add_transaction")
         data = {'date': '2023-06-03', 'amount': 300, 'account': 'Investment'}
         response = self.client.post('/add', data=data, follow_redirects=True)
         self.assertEqual(response.status_code, 200) # or self.assert200(response) or self.assertTrue(response.status_code==200)
-        self.assertTemplateUsed('transactions.html')
+        self.assertTemplateUsed('transactions.html') # to check that the correct template is used
         self.assertEqual(len(transactions), 6)
 
     def test_edit_transaction_form(self):
         print("test_edit_transaction_form")
         response = self.client.get('/edit/1')
         self.assertEqual(response.status_code, 200) # or self.assert200(response) or self.assertTrue(response.status_code==200)
-        self.assertTemplateUsed('edit.html')
+        self.assertTemplateUsed('edit.html') # to check that the correct template is used
 
     def test_delete_transaction(self):
         print("test_delete_transaction")
         response = self.client.get('/delete/1', follow_redirects=True)
         self.assertEqual(response.status_code, 200) # or self.assert200(response) or self.assertTrue(response.status_code==200)
-        self.assertTemplateUsed('transactions.html')
+        self.assertTemplateUsed('transactions.html') # to check that the correct template is used
         self.assertEqual(len(transactions), 1)
 
 
