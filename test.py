@@ -1,5 +1,4 @@
 import unittest
-from flask import Flask
 from flask_testing import TestCase
 
 # Import the Flask app
