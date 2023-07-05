@@ -14,6 +14,7 @@ pip install -r requirements.txt
 The following dependencies will be installed:
 
 Flask==2.3.2
+
 Flask_Testing==0.8.1
 
 ## Usage
