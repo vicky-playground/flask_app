@@ -6,12 +6,7 @@ This is a simple Flask application that allows users to manage transactions. It 
 git clone https://github.com/vicky-playground/flask_app.git
 ```
 
-2. Navigate to the project directory:
-```
-cd flask-transaction-manager
-```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 
 ```
 pip install -r requirements.txt
