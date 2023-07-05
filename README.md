@@ -21,7 +21,7 @@ Flask_Testing==0.8.1
 1. Run the Flask application:
 
 ```
-python app.py
+flask run
 ```
 The application will be accessible at http://localhost:5000.
 
