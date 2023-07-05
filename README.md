@@ -28,8 +28,11 @@ The application will be accessible at http://localhost:5000.
 2. The following routes are available:
 
 /: View a list of all transactions.
+
 /add: Add a new transaction.
+
 /edit/<transaction_id>: Edit an existing transaction.
+
 /delete/<transaction_id>: Delete a transaction.
 
 3. To run the tests, execute the following command:
