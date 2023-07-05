@@ -3,7 +3,7 @@ This is a simple Flask application that allows users to manage transactions. It 
 ## Installation
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/flask-transaction-manager.git
+git clone https://github.com/vicky-playground/flask_app.git
 ```
 
 2. Navigate to the project directory:
